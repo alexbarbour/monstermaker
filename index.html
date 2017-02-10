@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <title>Monster Maker</title>
+        
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>    
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />     
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+        <script src="js/script.js"></script>
+
+        
+
+
+
+    </head>
+
+
+    <body>
+        
+        <header>
+            <div class="container">
+                <h1 class="logo"><i class="fa fa-paw"></i>Monster Maker</h1>
+                <i class="fa fa-bars toggle-menu"></i>
+                <nav>
+                    <ul>
+                        <li><a id="modal_trigger" href="#modal">Sign in</a></li>
+		                <li><a href="nav" data-scrollto="splash">Home</a></li>
+                        <li><a href="nav" data-scrollto="overview">About</a></li>
+                        <li><a href="nav" data-scrollto="feature">Features</a></li>
+                        <li><a href="nav" data-scrollto="video">Video</a></li>
+                        <li><a href="nav" data-scrollto="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        
+        <!-- splash -->
+        <section class="splash">
+            <div class="container">
+                <h1>Monster Maker</h1>
+                <h2>Create Dungeons and Dragons creature stat blocks</h2>
+                <a class="btn" href="nav" data-scrollto="overview">Find out more<i class="fa fa-angle-down"></i></a>
+            </div>
+        </section>
+        
+        <!-- overview -->
+        <section class="overview">
+            <div class="container">
+                <div>
+                    <i class="fa fa-user"></i>
+                    <h2>Sign up</h2>
+                    <p>Sign up for free at start today!</p>
+                </div>
+                <div>
+                    <i class="fa fa-plus"></i>
+                    <h2>Create</h2>
+                    <p>Create and edit your very own Monsters and Enemies</p>
+                </div>
+                <div>
+                    <i class="fa fa-list-alt"></i>
+                    <h2>View creations</h2>
+                    <p>Look through your creations and view them in Valloric's Stat Block</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- features -->
+        <section class="feature greybg">
+            <div class="container">
+                <img src="images/website%20photo.png">
+                <div>
+                    <h1>Easy to use</h1>
+                    <p>Simply login and go to create</p>
+                    <ul>
+                        <li>
+                            <i class="fa fa-list-ol"></i>
+                            <h3>Creation tutorial</h3>
+                            <p>In-depth tutorial of each Monster component</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-list-alt"></i>
+                            <h3>Creation form</h3>
+                            <p>Follow the form, filling in details as you go</p>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-file-text"></i>
+                            <h3>View and edit</h3>
+                            <p>Once you are finished, you can view and edit your creations</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- cta -->
+        <section class="cta">
+            <div class="container">
+                <h1>So, want to try it?</h1>
+                <h2>Follow the link and sign up today</h2>
+                <a class="btn" id="modal_trigger2" href="#modal">Sign up<i class="fa fa-paw"></i></a>
+                
+            </div>
+        </section>
+
+        
+        <!-- video -->
+        <section class="feature greybg" id="video">
+            <div class="container">
+                <iframe width="460" height="280" src="https://www.youtube.com/embed/_njI2bHmN5A" frameborder="0" allowfullscreen></iframe>
+                <div class="video">
+                    <h1>Watch my guide</h1>
+                    <p>In this video I will explain a bit more about my project</p>
+                    <ul>
+                        <li>
+                            <i class="fa fa-list-alt"></i>
+                            <h3>Background</h3>
+                            <p>The reasons why I chose this idea as my third year project</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-book"></i>
+                            <h3>Terminology</h3>
+                            <p>Learn what the terminology used in this tool actually means</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-cogs"></i>
+                            <h3>Guide</h3>
+                            <p>What you need to know before using my Monster Creator</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- contact -->
+        <section class="contact">
+            <div class="container">
+                <h1>Get in touch</h1>
+                <h2>If you have any questions feel free to direct them to <a href="mailto:b00286893@studentmail.uws.ac.uk">b00286893@studentmail.uws.ac.uk</a></h2>
+                <form>
+                    <label class="input"><span>Name</span><input type="text" name="name" required></label>
+                    <label class="input"><span>Email Address</span><input type="email" name="email" required></label>
+                    <label class="message"><span>Message</span><textarea name="message" required></textarea></label>
+                    <label class="submit"><a href="#" class="btn">Send Message<i class="fa fa-angle-right"></i></a></label>
+                </form>
+            </div>
+        </section>
+        
+        
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="copyright">
+                    <p>Monster Maker <a href="http://twitter.com/abarbour747" target="_blank">Follow me on Twitter</a>.</p>
+                </div>
+                <div class="social">
+                    Share This: 
+                    <a href="https://twitter.com/home?status=Completely%20Free%20DnD%20Enemy%20Creation%20Tool%20by%20@abarbour747%20at%20https://valloric.github.io/statblock5e/" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://valloric.github.io/statblock5e/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.reddit.com/submit?title=Completely%20Free,%20DnD,%20Enemy%20Creation%20Tool&url=https://valloric.github.io/statblock5e/" target="_blank"><i class="fa fa-reddit"></i></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://valloric.github.io/statblock5e/&title=Completely%20Free%20DnD%20Enemy%20Creation%20Tool" target="_blank"><i class="fa fa-linkedin"></i></a> <!-- For this prototype I am linking to Valloric's website, in the finished version I would substitute this with my own -->
+                </div>
+            </div>
+        </footer>
+        
+        
+        <div id="modal" class="popupContainer" style="display:none;">
+		<header class="popupHeader">
+			<span class="header_title">Login</span>
+			<span class="modal_close"><i class="fa fa-times"></i></span>
+		</header>
+		
+		<section class="popupBody">
+			<!-- Social Login -->
+			<div class="social_login">
+				<div class="">
+					
+				</div>
+
+
+				<div class="action_btns">
+					<div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+					<div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+				</div>
+			</div>
+
+			<!-- Username & Password Login form -->
+			<div class="user_login">
+				<form action="login.php" method="post">
+					<label>Username</label>
+					<input type="text" name="check_username" required/>
+					<br />
+
+					<label>Password</label>
+					<input type="password" name="check_password" required/>
+					<br />
+                    
+                    	<div class="action_btns">
+						<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+						<div class="one_half last"><input type="submit" value="Login" class="btn btn_red">Login</div>
+					    </div>
+				</form>
+
+				<a href="#" class="forgot_password">Forgot password?</a>
+			</div>
+
+			<!-- Register Form -->
+			<div class="user_register">
+				<form action="send_post.php" method="post">
+					
+					<label>Username</label>
+					<input type="text" name="post_username" />
+					<br />
+
+					<label>Password</label>
+					<input type="password" name="post_password"/>
+					<br />
+					              
+                    <label>Forename</label>
+					<input type="text" name="post_fName"/>
+					<br />
+                    
+                    <label>Surname</label>
+					<input type="text" name="post_sName"/>
+				    <br />                  
+                    <label>Age (yyyy-mm-dd)</label>
+					<input type="date" name="post_DoB"/>
+					<br />
+                    
+
+					<div class="action_btns">
+						<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+						<div class="one_half last"><input type="submit" value="Register" class="btn btn_red"/></div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+    
+        
+    <script type="text/javascript">
+	$("#modal_trigger").leanModal({top : 10, overlay : 0.6, closeButton: ".modal_close" });
+    $("#modal_trigger2").leanModal({top : 10, overlay : 0.6, closeButton: ".modal_close" });    
+
+	$(function(){
+		// Calling Login Form
+		$("#login_form").click(function(){
+			$(".social_login").hide();
+			$(".user_login").show();
+			return false;
+		});
+
+		// Calling Register Form
+		$("#register_form").click(function(){
+			$(".social_login").hide();
+			$(".user_register").show();
+			$(".header_title").text('Register');
+			return false;
+		});
+
+		// Going back to Social Forms
+		$(".back_btn").click(function(){
+			$(".user_login").hide();
+			$(".user_register").hide();
+			$(".social_login").show();
+			$(".header_title").text('Login');
+			return false;
+		});
+
+	})
+    </script>
+
+
+    </body>
+</html>
